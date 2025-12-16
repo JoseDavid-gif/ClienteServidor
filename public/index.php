@@ -42,9 +42,10 @@ $action = $_GET['action'] ?? 'index';
 $controllers = [
     'member' => 'MemberController',
     'class' => 'ClassController',
-    'payment' => 'PaymentController'
+    'payment' => 'PaymentController',
+    'instructor' => 'InstructorController',
+    'loan' => 'LoanController'
 ];
-
 // SERVIDOR: Valida que el controlador existe
 if (!isset($controllers[$controllerName])) {
     die('Controlador no encontrado');
